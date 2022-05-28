@@ -13,7 +13,7 @@ steps:
   args:
   - 'build'
   - '-t'
-  - 'us-central1-docker.pkg.dev/$PROJECT_ID/my-repository/hello-cloudbuild:$SHORT_SHA'
+  - 'asia-southeast1-docker.pkg.dev/duy-k8s/cicd-registry/cicd-app:v1'
   - '.'
 
 # This step pushes the image to Artifact Registry
@@ -23,4 +23,4 @@ steps:
   id: Push
   args:
   - 'push'
-  - 'us-central1-docker.pkg.dev/$PROJECT_ID/my-repository/hello-cloudbuild:$SHORT_SHA'
+  - 'asia-southeast1-docker.pkg.dev/duy-k8s/cicd-registry/cicd-app:v1'
