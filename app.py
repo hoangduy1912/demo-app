@@ -3,7 +3,7 @@ app = Flask('hello-cloudbuild')
 
 @app.route('/')
 def hello():
-  return "Application Version 2\n"
+  return "Application Version 3\n"
 
 if __name__ == '__main__':
   app.run(host = '0.0.0.0', port = 8080)
